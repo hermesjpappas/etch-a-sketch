@@ -1,0 +1,35 @@
+/* it seems like both body and html need to be marked with
+ * 100% height and display:grid in order to truly center anything */
+
+body, html {
+	display: grid;
+	background-color: #151515;
+	color: #bbb;
+	height: 100%;
+	width: 100%;
+	}
+
+#main {
+	/*marking height and width as 99% as 100% causes scrolling bars to come up */
+	margin: auto;
+	height: 99%;
+	width: 99%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid red;
+
+}
+
+#grid-container {
+	display: grid;
+	height: 800px;
+	width: 800px;
+}
+
+.grid-item {
+	padding: 5px;
+	text-align: center;
+	font-size: 20px;
+	border: 2px solid #ccc;
+}
