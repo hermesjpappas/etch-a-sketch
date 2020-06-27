@@ -7,8 +7,18 @@ body, html {
 	color: #bbb;
 	height: 100%;
 	width: 100%;
-	}
+	font-family: 'Comfortaa','Helvetica',sans-serif;
+}
+	
+h1,h2,h3,h4,h5 {
+	font-weight: bold;
+}
 
+h1 {
+	font-size: 60px;
+	margin-bottom: 60px;
+}
+	
 #main {
 	/*marking height and width as 99% as 100% causes scrolling bars to come up */
 	margin: auto;
@@ -17,6 +27,7 @@ body, html {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 }
 
 #grid-container {
@@ -30,9 +41,36 @@ body, html {
 	padding: 5px;
 	text-align: center;
 	font-size: 20px;
+	cursor: crosshair;
 	/* border: 2px solid #ccc; */
 }
 
 .touched {
 	background-color: #ccc;
+}
+
+#clear {
+	font-family: 'Comfortaa', 'Helvetica', sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	background-color: #303030;
+	color: #ccc;
+	margin-top: 50px;
+	padding: 20px 50px 20px 50px;
+	border-radius: 20px;
+}
+
+#clear:focus {
+	outline: none;
+}
+
+#clear:hover {
+	background-color: #fff;
+	color: #151515;
+	cursor: pointer;
+}
+
+#clear:active {
+	background-color: #000;
+	color: #fff;
 }

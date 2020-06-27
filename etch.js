@@ -15,12 +15,20 @@ for(let i = 0; i < (gridside * gridside); i++)
 }
 
 //make it so that when a grid box is hovered over it changes color
-const gridsquares = document.querySelectorAll(".grid-item");
-gridsquares.forEach((gridsquare) => 
+const griditems = document.querySelectorAll(".grid-item");
+griditems.forEach((griditem) => 
 {
-	gridsquare.addEventListener('mouseover', (e) => 
+	griditem.addEventListener('mouseover', (e) => 
 	{
-		gridsquare.style.backgroundColor = "#ccc";
-		// griditem.classList.add('touched');
+		griditem.classList.add('touched');
+	});
+});
+
+const clearb = document.querySelector("#clear");
+clearb.addEventListener('click', (e) => 
+{
+	griditems.forEach((griditem) => 
+	{
+		griditem.classList.remove('touched');
 	});
 });
