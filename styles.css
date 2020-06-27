@@ -22,6 +22,7 @@ h1 {
 
 h5 {
 	font-size: 25px;
+	margin-bottom:30px;
 }
 	
 #main {
@@ -60,7 +61,7 @@ button {
 	font-weight: bold;
 	background-color: #303030;
 	color: #ccc;
-	margin-top: 50px;
+	margin-top: 40px;
 	margin-left: 20px;
 	margin-right: 20px;
 	border-radius: 20px;
@@ -83,4 +84,11 @@ button:hover {
 button:active {
 	background-color: #000;
 	color: #fff;
+}
+
+#gridsize {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	font-size: 20px;
 }

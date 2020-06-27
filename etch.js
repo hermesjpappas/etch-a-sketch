@@ -1,11 +1,13 @@
 let gridside = 32;
 const gridcont = document.querySelector('#grid-container');
 const gridstyle = getComputedStyle(gridcont);
+const sizepara = document.querySelector('#gridsize');
 let griditems;
 
 //use this section of the code only if you want
 //the user to hold mouse down to draw
 let mouseDown = false;
+//the preventDefault() function is to avoid drag functionality
 document.body.onmousedown = function() { event.preventDefault(); mouseDown = true;}
 document.body.onmouseup = function() { mouseDown = false;}
 
@@ -35,6 +37,9 @@ function createGrid(gridside)
 			
 		});
 	});
+
+	sizepara.textContent = `GRID SIZE: ${gridside} X ${gridside}`;
+	// document.body.appendChild(sizepara);
 }
 
 
