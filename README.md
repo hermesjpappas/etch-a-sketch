@@ -2,7 +2,7 @@
 
 An exercise from The Odin Project made to bring knowledge of HTML, CSS and JS together.
 
-![screenshot of the app in use](etchsample.png "Fun times!")
+![screenshot of the app in use](etch_sample.png "Fun times!")
 
 Hold down the left mouse button to draw, press "Clear" to start over and "Resize" to change the resolution of your canvas.
 
