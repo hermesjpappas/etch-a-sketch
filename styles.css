@@ -12,11 +12,16 @@ body, html {
 	
 h1,h2,h3,h4,h5 {
 	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 h1 {
 	font-size: 60px;
-	margin-bottom: 60px;
+}
+
+h5 {
+	font-size: 25px;
 }
 	
 #main {
@@ -49,28 +54,33 @@ h1 {
 	background-color: #ccc;
 }
 
-#clear {
+button {
 	font-family: 'Comfortaa', 'Helvetica', sans-serif;
 	font-size: 25px;
 	font-weight: bold;
 	background-color: #303030;
 	color: #ccc;
 	margin-top: 50px;
-	padding: 20px 50px 20px 50px;
+	margin-left: 20px;
+	margin-right: 20px;
 	border-radius: 20px;
+	width: 200px;
+	height: 70px;
+	text-align: center;
+	padding: 10px 0 10px 0;
 }
 
-#clear:focus {
+button:focus {
 	outline: none;
 }
 
-#clear:hover {
+button:hover {
 	background-color: #fff;
 	color: #151515;
 	cursor: pointer;
 }
 
-#clear:active {
+button:active {
 	background-color: #000;
 	color: #fff;
 }
