@@ -17,19 +17,22 @@ body, html {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border: 2px solid red;
-
 }
 
 #grid-container {
 	display: grid;
-	height: 800px;
-	width: 800px;
+	height: 900px;
+	width: 900px;
+	border: 2px solid #ccc;
 }
 
 .grid-item {
 	padding: 5px;
 	text-align: center;
 	font-size: 20px;
-	border: 2px solid #ccc;
+	/* border: 2px solid #ccc; */
+}
+
+.touched {
+	background-color: #ccc;
 }
