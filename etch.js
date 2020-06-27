@@ -39,12 +39,10 @@ function createGrid(gridside)
 	});
 
 	sizepara.textContent = `GRID SIZE: ${gridside} X ${gridside}`;
-	// document.body.appendChild(sizepara);
 }
 
 
 //when the user clicks the clear button, clear the grid
-//and then ask them how large / detailed they want the new grid
 const clearb = document.querySelector("#clear");
 clearb.addEventListener('click', (e) => 
 {
@@ -53,7 +51,7 @@ clearb.addEventListener('click', (e) =>
 		griditem.classList.remove('touched');
 	});
 	
-	});
+});
 
 //make a resize button so that the user can change resolution
 //accepting values between 16 and 128
@@ -62,7 +60,6 @@ reszb.addEventListener('click', (e) =>
 {
 	//use to get correct input
 	let validprompt = true;
-	let i = 0;
 	
 	do
 	{
@@ -75,6 +72,7 @@ reszb.addEventListener('click', (e) =>
 		
 	} while (validprompt === false);
 	
+	///create the grid again using new side size value
 	createGrid(gridside);
 });
 
