@@ -63,11 +63,13 @@ reszb.addEventListener('click', (e) =>
 	
 	do
 	{
+		
 		gridside = (validprompt) ? prompt("Choose a grid side size between 16 and 128:") :
-									prompt("Incorrect. Please choose a size between 16 and 128:");
-		gridside = parseInt(gridside);
+									prompt("NOT A VALID VALUE. Please choose between 16 and 128:");
+		gridside = gridside.replace(/\s/g, '');
 		
 		if(gridside >= 16 && gridside <= 128) validprompt = true;
+		else if(gridside === null || gridside === "") return;
 		else validprompt = false;
 		
 	} while (validprompt === false);
