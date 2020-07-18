@@ -15,8 +15,9 @@ document.body.onmouseup = function() { mouseDown = false;}
 function createGrid(gridside)
 {
 	gridcont.innerHTML="";
-	gridcont.style.gridTemplateColumns = repStrWhile(`${100/gridside}% `, gridside);
-	gridcont.style.gridTemplateRows = repStrWhile(`${100/gridside}% `, gridside);
+	gridcont.style.gridTemplateColumns = `${100/gridside}% `.repeat(gridside);
+	gridcont.style.gridTemplateRows = `${100/gridside}% `.repeat(gridside);
+
 	
 	for(let i = 0; i < (gridside * gridside); i++)
 	{
